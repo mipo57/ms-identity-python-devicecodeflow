@@ -142,7 +142,7 @@ The relevant code for this sample is in the `device_code_sample.py` file. The st
         graph_data = requests.get(  # Use token to call downstream service
         config["endpoint"],
         headers={'Authorization': 'Bearer ' + result['access_token']}, ).json()
-    print("Users from graph: " + str(graph_data))
+        print("Users from graph: " + str(graph_data))
     else:
         print(result.get("error"))
         print(result.get("error_description"))
